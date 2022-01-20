@@ -1,0 +1,55 @@
+<div class="wrapper">
+  <div class="form">
+    <div class="form__field">
+      <label for="input-distance" class="form__label"
+        >Количество километров</label
+      ><input
+        type="text"
+        name="distance"
+        id="input-distance"
+        class="form__input"
+        [(ngModel)]="distance"
+      />
+    </div>
+    <div class="form__field">
+      <label for="input-age" class="form__label">Возраст</label
+      ><input
+        type="text"
+        name="age"
+        id="input-age"
+        class="form__input"
+        [(ngModel)]="age"
+      />
+    </div>
+    <div class="form__field">
+      <label for="input-baggage-weight" class="form__label">Вес багажа</label
+      ><input
+        type="text"
+        name="weight"
+        id="input-baggage-weight"
+        class="form__input"
+        [(ngModel)]="weight"
+      />
+    </div>
+  </div>
+
+  <div class="btn-wrap mt-2">
+    <button
+      class="btn btn-primary"
+      id="btn-calc"
+      (click)="calcOnClick(distance, age, weight)"
+    >
+      Рассчитать
+    </button>
+  </div>
+  <h4>Предложения</h4>
+  <table class="table table-bordered table-striped">
+    <tbody>
+      <tr *ngFor="let offer of offers">
+        <td>{{ offer.provideName }}</td>
+        <td>{{ offer.rate }}</td>
+        <td>{{ offer.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

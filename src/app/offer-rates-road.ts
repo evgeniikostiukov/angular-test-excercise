@@ -1,0 +1,32 @@
+export const OFFERRATESROAD = [
+  {
+    rate: 'Эконом',
+    km: 0.5,
+    baggageFree: 15,
+    baggagePrice: 50,
+    baggageMax: 50,
+    childAge: 5,
+    childSale: 50,
+    childSaleIncludeBaggage: false,
+  },
+  {
+    rate: 'Продвинутый',
+    km: 2,
+    baggageFree: 20,
+    baggagePrice: 50,
+    baggageMax: 60,
+    childAge: 8,
+    childSale: 30,
+    childSaleIncludeBaggage: false,
+  },
+  {
+    rate: 'Люкс',
+    km: 4,
+    baggageFree: 50,
+    baggagePrice: 0,
+    baggageMax: 50,
+    childAge: 16,
+    childSale: 20,
+    childSaleIncludeBaggage: true,
+  },
+];
